@@ -44,7 +44,7 @@ const NewsList =  {
     fetch(`https://newsapi.org/v2/top-headlines?country=us`,
     {
       headers: {
-        'Authorization': `Bearer ad2618d1683c446b8898275544deea91`
+        'Authorization': `Bearer <apikey>`
       }
     })
     .then(response =>response.json())
@@ -68,7 +68,7 @@ const NewsList =  {
 
       fetch(`https://newsapi.org/v2/everything?q='${self.searchTerm}'&language=en`, {    
         headers: {
-          'Authorization': `Bearer ad2618d1683c446b8898275544deea91`,
+          'Authorization': `Bearer <apikey>`,
         }})
         .then(function(response) {
           return response.json();
